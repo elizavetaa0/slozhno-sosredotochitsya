@@ -28,6 +28,7 @@
     --bg-color: #000028;
     --headers-color: #000028;
     --paragraph-title-color: #FF0070;
+    --decoration-color: #FF0070;
     --text-color: #F1B2CE;
     --main-color: #FF0070;
     --bg-image: url(../images/cover-image-dark.png);
@@ -40,6 +41,13 @@
   .decorated-element {
     visibility: var(--visibility);
     }
+}
 
-
+@media (prefers-color-scheme: dark) and (width >= 1024px) {
+  .header__menu-heading {
+    text-shadow: 4px 4px 0 #FF0070;
+  }
+  .footer-heading {
+    text-shadow: 2px 2px 0 #FF0070;
+  }
 }
