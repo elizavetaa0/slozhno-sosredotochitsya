@@ -10,9 +10,10 @@
   --main-color: #FF0070;
   --bg-image: url(../images/cover-image-dark.png);
   --main-font-size: 18px;
-  --main-font-family: 'IBM Plex mono', sans-serif;
+  --main-font-family: 'IBM Plex mono', monospace;
   --heading-accent-color: #DB00FF;
   --padding-page: 10px;
   --heading-font-size: 157px;
   --visibility: visible;
+  --margin-block-header: 40px;
 }

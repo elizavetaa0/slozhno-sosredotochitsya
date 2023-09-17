@@ -19,6 +19,8 @@
   --paragraph-title-color: #353430;
   --margin-page: 10px;
   --visibility: hidden;
+  --buttons-color: #353430;
+  --buttons-hover-color: rgba(50, 49, 45, 0.40);
 }
 
 
@@ -28,11 +30,31 @@
     --headers-color: #353430;
     --text-color: #353430;
     --main-color: #FF8DCB;
+    --decoration-color: #353430;
     --bg-image: url(../images/cover-image-light.png);
     --heading-accent-color: #FFC2E6;
     --paragraph-title-color: #353430;
     --margin-page: 10px; 
     --visibility: hidden;
+    --buttons-color: #353430;
+    --buttons-hover-color: rgba(50, 49, 45, 0.40);
     }
 
+  .decorated-element {
+    visibility: var(--visibility);
+    }
+
+  .header__theme-menu-button:hover {
+    border: 1px solid var(--buttons-hover-color);
+  }
+
+}
+
+@media (prefers-color-scheme: light) and (width >= 1024px) {
+  .header__menu-heading {
+    text-shadow: 4px 4px 0 #FF0070;
+  }
+  .footer-heading {
+    text-shadow: 2px 2px 0 #FF0070;
+  }
 }

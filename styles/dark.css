@@ -19,9 +19,11 @@
   --heading-accent-color: #DB00FF;
   --margin-page: 10px;
   --visibility: visible;
+  --buttons-color: #FF0070;
+  --buttons-hover-color: rgba(255, 0, 112, 0.40);
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #000028;
     --headers-color: #000028;
@@ -30,11 +32,14 @@
     --main-color: #FF0070;
     --bg-image: url(../images/cover-image-dark.png);
     --heading-accent-color: #DB00FF;
-    --margin-page: 10px; 
+    --margin-page: 10px;
+    --buttons-color: #FF0070;
+    --buttons-hover-color: rgba(255, 0, 112, 0.40);
+    }
+  
+  .decorated-element {
+    visibility: var(--visibility);
     }
 
-    .header div {
-      visibility: var(--visibility);
-    }
 
 }
